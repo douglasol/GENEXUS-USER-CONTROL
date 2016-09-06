@@ -1,0 +1,313 @@
+<?xml version="1.0"?>
+<Content xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<Object id="BootstrapButtonBar">
+<Group>
+<Name>General</Name>
+<Type>Main</Type>
+<Children>
+
+	<Prop>
+	<Id>AttID</Id>
+	<Name>Attribute</Name>
+	<Type>Custom</Type>
+	<CustomType>Artech.Genexus.Common.CustomTypes.ControlAttVarReference, Artech.Genexus.Common</CustomType>
+	<Metadata>
+	<Value name="FlagSetValueMethod">SetAttribute</Value>
+	<Value name="FlagGetValueMethod">GetAttribute</Value>
+	<Value name="FlagScope">DesignTime</Value>
+	 <Value name="FlagDataTypeFilter">character, varchar, longvarchar</Value>
+	</Metadata>
+	</Prop>
+
+	 <Group>
+	 <Name>Button Bar</Name>
+	 <Children>
+
+		<Prop>
+		<Id>SeparateGroups</Id>
+		<Name>SeparateGroups</Name>
+		<Type>Boolean</Type>
+		<Default>true</Default>
+		<Metadata>
+		<Value name="FlagControlInfoProp">True</Value>
+		</Metadata>
+		</Prop>
+
+		<Prop>
+		<Id>Orientation</Id>
+		<Name>Orientation</Name>
+		<Type>Combo</Type>
+		<Metadata />
+		<Default>btn-group</Default>
+		<Values>
+		<Value id="btn-group" desc="Horizontal" />
+		<Value id="btn-group-vertical" desc="Vertical" />
+		</Values>
+		<Metadata>
+		<Value name="FlagControlInfoProp">True</Value>
+		</Metadata>
+		</Prop>
+
+		<Prop>
+		<Id>Size</Id>
+		<Name>Size</Name>
+		<Type>Combo</Type>
+		<Metadata />
+		<Values>
+		<Value id="btn-xs" desc="Extra-Small" />
+		<Value id="btn-sm" desc="Small" />
+		<Value id="btn-md" desc="Medium" />
+		<Value id="btn-lg" desc="Large" />
+		</Values>
+		<Metadata>
+		<Value name="FlagControlInfoProp">True</Value>
+		</Metadata>
+		</Prop>
+
+		<Prop>
+		<Id>Style</Id>
+		<Name>Style</Name>
+		<Type>Combo</Type>
+		<Metadata />
+		<Values>
+		<Value id="btn-default" desc="Default" />
+		<Value id="btn-primary" desc="Primary" />
+		<Value id="btn-success" desc="Success" />
+		<Value id="btn-info" desc="Info" />
+		<Value id="btn-warning" desc="Warning" />
+		<Value id="btn-danger" desc="Danger" />
+		<Value id="btn-link" desc="Link" />
+		</Values>
+		<Metadata>
+		<Value name="FlagControlInfoProp">True</Value>
+		</Metadata>
+		</Prop> 
+
+		<Prop>
+		<Id>Round</Id>
+		<Name>Round</Name>
+		<Type>Boolean</Type>
+		<Default>true</Default>
+		<Metadata>
+		<Value name="FlagControlInfoProp">True</Value>
+		</Metadata>
+		</Prop>
+
+		<Prop>
+		<Id>Border</Id>
+		<Name>Border</Name>
+		<Type>Boolean</Type>
+		<Default>true</Default>
+		<Metadata>
+		<Value name="FlagControlInfoProp">True</Value>
+		</Metadata>
+		</Prop>
+
+		 <Group>
+		 <Name>Edition</Name>
+		 <Children>
+			<Prop>
+			<Id>Insert</Id>
+			<Name>Insert</Name>
+			<Type>Boolean</Type>
+			<Default>true</Default>
+			<Metadata>
+			<Value name="FlagControlInfoProp">True</Value>
+			</Metadata>
+			</Prop>
+
+			<Prop>
+			<Id>Edit</Id>
+			<Name>Edit</Name>
+			<Type>Boolean</Type>
+			<Default>true</Default>
+			<Metadata>
+			<Value name="FlagControlInfoProp">True</Value>
+			</Metadata>
+			</Prop>
+
+			<Prop>
+			<Id>Delete</Id>
+			<Name>Delete</Name>
+			<Type>Boolean</Type>
+			<Default>true</Default>
+			<Metadata>
+			<Value name="FlagControlInfoProp">True</Value>
+			</Metadata>
+			</Prop>
+
+		</Children>
+		</Group>
+
+
+		 <Group>
+		 <Name>Navigation</Name>
+		 <Children>
+		 
+			<Prop>
+			<Id>Refresh</Id>
+			<Name>Refresh</Name>
+			<Type>Boolean</Type>
+			<Default>true</Default>
+			<Metadata>
+			<Value name="FlagControlInfoProp">True</Value>
+			</Metadata>
+			</Prop>
+
+			<Prop>
+			<Id>Filter</Id>
+			<Name>Filter</Name>
+			<Type>Boolean</Type>
+			<Default>true</Default>
+			<Metadata>
+			<Value name="FlagControlInfoProp">True</Value>
+			</Metadata>
+			</Prop>
+
+			<Prop>
+			<Id>Search</Id>
+			<Name>Search</Name>
+			<Type>Boolean</Type>
+			<Default>true</Default>
+			<Metadata>
+			<Value name="FlagControlInfoProp">True</Value>
+			</Metadata>
+			</Prop>
+
+			<Prop>
+			<Id>First</Id>
+			<Name>First</Name>
+			<Type>Boolean</Type>
+			<Default>true</Default>
+			<Metadata>
+			<Value name="FlagControlInfoProp">True</Value>
+			</Metadata>
+			</Prop>
+
+			<Prop>
+			<Id>Before</Id>
+			<Name>Before</Name>
+			<Type>Boolean</Type>
+			<Default>true</Default>
+			<Metadata>
+			<Value name="FlagControlInfoProp">True</Value>
+			</Metadata>
+			</Prop>
+
+			<Prop>
+			<Id>Next</Id>
+			<Name>Next</Name>
+			<Type>Boolean</Type>
+			<Default>true</Default>
+			<Metadata>
+			<Value name="FlagControlInfoProp">True</Value>
+			</Metadata>
+			</Prop>
+
+			<Prop>
+			<Id>Last</Id>
+			<Name>Last</Name>
+			<Type>Boolean</Type>
+			<Default>true</Default>
+			<Metadata>
+			<Value name="FlagControlInfoProp">True</Value>
+			</Metadata>
+			</Prop>
+
+		</Children>
+		</Group>
+
+
+		 <Group>
+		 <Name>Exporting</Name>
+		 <Children>
+			<Prop>
+			<Id>Print</Id>
+			<Name>Print</Name>
+			<Type>Boolean</Type>
+			<Default>true</Default>
+			<Metadata>
+			<Value name="FlagControlInfoProp">True</Value>
+			</Metadata>
+			</Prop>
+			
+			<Prop>
+			<Id>Excel</Id>
+			<Name>Excel</Name>
+			<Type>Boolean</Type>
+			<Default>true</Default>
+			<Metadata>
+			<Value name="FlagControlInfoProp">True</Value>
+			</Metadata>
+			</Prop>
+			
+			<Prop>
+			<Id>Pdf</Id>
+			<Name>Pdf</Name>
+			<Type>Boolean</Type>
+			<Default>true</Default>
+			<Metadata>
+			<Value name="FlagControlInfoProp">True</Value>
+			</Metadata>
+			</Prop>
+			
+			<Prop>
+			<Id>Chart</Id>
+			<Name>Chart</Name>
+			<Type>Boolean</Type>
+			<Default>true</Default>
+			<Metadata>
+			<Value name="FlagControlInfoProp">True</Value>
+			</Metadata>
+			</Prop>
+		</Children>
+		</Group>
+
+
+		 <Group>
+		 <Name>Config</Name>
+		 <Children>
+			<Prop>
+			<Id>Config</Id>
+			<Name>Config</Name>
+			<Type>Boolean</Type>
+			<Default>true</Default>
+			<Metadata>
+			<Value name="FlagControlInfoProp">True</Value>
+			</Metadata>
+			</Prop>
+
+			<Prop>
+			<Id>Chat</Id>
+			<Name>Chat</Name>
+			<Type>Boolean</Type>
+			<Default>true</Default>
+			<Metadata>
+			<Value name="FlagControlInfoProp">True</Value>
+			</Metadata>
+			</Prop>
+		</Children>
+		</Group>
+
+
+		 <Group>
+		 <Name>Help</Name>
+		 <Children>
+			<Prop>
+			<Id>Help</Id>
+			<Name>Help</Name>
+			<Type>Boolean</Type>
+			<Default>true</Default>
+			<Metadata>
+			<Value name="FlagControlInfoProp">True</Value>
+			</Metadata>
+			</Prop>
+		</Children>
+		</Group>
+		
+	</Children>
+	</Group>
+</Children>
+</Group>
+</Object>
+</Content>

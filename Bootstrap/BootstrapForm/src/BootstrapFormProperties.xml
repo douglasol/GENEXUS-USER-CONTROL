@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<Content xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Object id="BootstrapForm">
+		<Group>
+			<Name>General</Name>
+			<Type>Main</Type>
+			<Children>
+
+				<Group>
+				<Name>DataBinding</Name>
+				<Children>
+				<Prop>
+				<Id>FormData</Id>
+				<Name>FormData</Name>
+				<Type>Custom</Type>
+				<CustomType>Artech.Genexus.Common.CustomTypes.ControlAttVarReference, Artech.Genexus.Common</CustomType>
+				<Metadata>
+				<Value name="FlagSetValueMethod">SetFormData</Value>
+				<Value name="FlagGetValueMethod">GetFormData</Value>
+				<Value name="FlagDataTypeFilter">BootstrapFormData</Value>
+				</Metadata>
+				</Prop>
+				</Children>
+				</Group>
+
+				<Group>
+				<Name>Buttons</Name>
+				<Children>
+
+				<Prop>
+				<Id>ConfirmCaption</Id>
+				<Name>ConfirmCaption</Name>
+				<Type>Text</Type>
+  			<Default>Confirmar</Default>
+				  <Metadata />
+				</Prop>
+
+				<Prop>
+			  <Id>ConfirmStyle</Id>
+			  <Name>ConfirmStyle</Name>
+			  <Type>Combo</Type>
+			  <Metadata />
+			  <Values>
+			 <Value id="btn-default" desc="Default" />
+			 <Value id="btn-primary" desc="Primary" />
+			 <Value id="btn-success" desc="Success" />
+			 <Value id="btn-info" desc="Info" />
+			 <Value id="btn-warning" desc="Warning" />
+			 <Value id="btn-danger" desc="Danger" />
+			 <Value id="btn-link" desc="Link" />
+			  </Values>
+			</Prop>
+
+			<Prop>
+			  <Id>ConfirmSize</Id>
+			  <Name>ConfirmSize</Name>
+			  <Type>Combo</Type>
+			  <Metadata />
+			  <Values>
+			 <Value id="btn-group-xs" desc="Extra-small" />
+			 <Value id="btn-group-sm" desc="Small" />
+			 <Value id="btn-group-md" desc="Medium" />
+			 <Value id="btn-group-lg" desc="Large" />
+			  </Values>
+			</Prop>
+
+			<Prop>
+			<Id>CancelCaption</Id>
+				<Name>CancelCaption</Name>
+				<Type>Text</Type>
+  			<Default>Cancelar</Default>
+				  <Metadata />
+				</Prop>
+
+				<Prop>
+			  <Id>CancelStyle</Id>
+			  <Name>CancelStyle</Name>
+			  <Type>Combo</Type>
+			  <Metadata />
+			  <Values>
+			 <Value id="btn-default" desc="Default" />
+			 <Value id="btn-primary" desc="Primary" />
+			 <Value id="btn-success" desc="Success" />
+			 <Value id="btn-info" desc="Info" />
+			 <Value id="btn-warning" desc="Warning" />
+			 <Value id="btn-danger" desc="Danger" />
+			 <Value id="btn-link" desc="Link" />
+			  </Values>
+			</Prop>
+
+			<Prop>
+			  <Id>CancelSize</Id>
+			  <Name>CancelSize</Name>
+			  <Type>Combo</Type>
+			  <Metadata />
+			  <Values>
+			 <Value id="btn-group-xs" desc="Extra-small" />
+			 <Value id="btn-group-sm" desc="Small" />
+			 <Value id="btn-group-md" desc="Medium" />
+			 <Value id="btn-group-lg" desc="Large" />
+			  </Values>
+			</Prop>
+
+				</Children>
+				</Group>
+
+
+			</Children>
+		</Group>
+	</Object>
+</Content>

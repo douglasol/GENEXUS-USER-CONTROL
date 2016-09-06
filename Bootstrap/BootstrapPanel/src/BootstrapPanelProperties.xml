@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<Content xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Object id="BootstrapPanel">
+		<Group>
+			<Name>General</Name>
+			<Type>Main</Type>
+			<Children>
+
+				<Prop>
+					<Id>Title</Id>
+					<Name>Title</Name>
+					<Type>Text</Type>
+					<Default>Titulo do Painel</Default>
+					<Metadata />
+				</Prop>
+
+				<Prop>
+					<Id>Text</Id>
+					<Name>Text</Name>
+					<Type>Text</Type>
+					<Default>Texto do Painel</Default>
+  				<Metadata />
+				</Prop>
+
+				<Prop>
+					<Id>Style</Id>
+					<Name>Style</Name>
+					<Type>Combo</Type>
+					<Default>panel-default</Default>
+					<Metadata />
+					<Values>
+						<Value id="panel-default" desc="Default" />
+						<Value id="panel-primary" desc="Primary" />
+						<Value id="panel-success" desc="Success" />
+						<Value id="panel-info" desc="Info" />
+						<Value id="panel-warning" desc="Warning" />
+						<Value id="panel-danger" desc="Danger" />
+					</Values>
+				</Prop>
+
+			</Children>
+		</Group>
+	</Object>
+</Content>

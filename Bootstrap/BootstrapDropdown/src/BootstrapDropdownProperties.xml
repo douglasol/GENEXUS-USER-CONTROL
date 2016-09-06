@@ -1,0 +1,325 @@
+<?xml version="1.0"?>
+<Content xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Object id="BootstrapDropdown">
+    <Group>
+      <Name>General</Name>
+      <Type>Main</Type>
+      <Children>
+        <Prop>
+          <Id>Badge</Id>
+          <Name>Badge</Name>
+          <Type>Integer</Type>
+          <Metadata />
+        </Prop>
+        <Prop>
+          <Id>Glyphicon</Id>
+          <Name>Glyphicon</Name>
+          <Type>Combo</Type>
+          <Metadata />
+          <Values>
+            <Value id="glyphicon-adjust" desc="adjust" />
+            <Value id="glyphicon-alert" desc="alert" />
+            <Value id="glyphicon-align-center" desc="align-center" />
+            <Value id="glyphicon-align-justify" desc="align-justify" />
+            <Value id="glyphicon-align-left" desc="align-left" />
+            <Value id="glyphicon-align-right" desc="align-right" />
+            <Value id="glyphicon-apple" desc="apple" />
+            <Value id="glyphicon-arrow-down" desc="arrow-down" />
+            <Value id="glyphicon-arrow-left" desc="arrow-left" />
+            <Value id="glyphicon-arrow-right" desc="arrow-right" />
+            <Value id="glyphicon-arrow-up" desc="arrow-up" />
+            <Value id="glyphicon-asterisk" desc="asterisk" />
+            <Value id="glyphicon-baby-formula" desc="baby-formula" />
+            <Value id="glyphicon-backward" desc="backward" />
+            <Value id="glyphicon-ban-circle" desc="ban-circle" />
+            <Value id="glyphicon-barcode" desc="barcode" />
+            <Value id="glyphicon-bed" desc="bed" />
+            <Value id="glyphicon-bell" desc="bell" />
+            <Value id="glyphicon-bishop" desc="bishop" />
+            <Value id="glyphicon-bitcoin" desc="bitcoin" />
+            <Value id="glyphicon-blackboard" desc="blackboard" />
+            <Value id="glyphicon-bold" desc="bold" />
+            <Value id="glyphicon-" desc="" />
+            <Value id="glyphicon-mark" desc="mark" />
+            <Value id="glyphicon-briefcase" desc="briefcase" />
+            <Value id="glyphicon-bullhorn" desc="bullhorn" />
+            <Value id="glyphicon-calendar" desc="calendar" />
+            <Value id="glyphicon-camera" desc="camera" />
+            <Value id="glyphicon-cd" desc="cd" />
+            <Value id="glyphicon-certificate" desc="certificate" />
+            <Value id="glyphicon-check" desc="check" />
+            <Value id="glyphicon-chevron-down" desc="chevron-down" />
+            <Value id="glyphicon-chevron-left" desc="chevron-left" />
+            <Value id="glyphicon-chevron-right" desc="chevron-right" />
+            <Value id="glyphicon-chevron-up" desc="chevron-up" />
+            <Value id="glyphicon-circle-arrow-down" desc="circle-arrow-down" />
+            <Value id="glyphicon-circle-arrow-left" desc="circle-arrow-left" />
+            <Value id="glyphicon-circle-arrow-right" desc="circle-arrow-right" />
+            <Value id="glyphicon-circle-arrow-up" desc="circle-arrow-up" />
+            <Value id="glyphicon-cloud" desc="cloud" />
+            <Value id="glyphicon-cloud-download" desc="cloud-download" />
+            <Value id="glyphicon-cloud-upload" desc="cloud-upload" />
+            <Value id="glyphicon-cog" desc="cog" />
+            <Value id="glyphicon-collapse-down" desc="collapse-down" />
+            <Value id="glyphicon-collapse-up" desc="collapse-up" />
+            <Value id="glyphicon-comment" desc="comment" />
+            <Value id="glyphicon-compressed" desc="compressed" />
+            <Value id="glyphicon-copy" desc="copy" />
+            <Value id="glyphicon-copyright-mark" desc="copyright-mark" />
+            <Value id="glyphicon-credit-card" desc="credit-card" />
+            <Value id="glyphicon-cutlery" desc="cutlery" />
+            <Value id="glyphicon-dashboard" desc="dashboard" />
+            <Value id="glyphicon-download" desc="download" />
+            <Value id="glyphicon-download-alt" desc="download-alt" />
+            <Value id="glyphicon-duplicate" desc="duplicate" />
+            <Value id="glyphicon-earphone" desc="earphone" />
+            <Value id="glyphicon-edit" desc="edit" />
+            <Value id="glyphicon-education" desc="education" />
+            <Value id="glyphicon-eject" desc="eject" />
+            <Value id="glyphicon-envelope" desc="envelope" />
+            <Value id="glyphicon-equalizer" desc="equalizer" />
+            <Value id="glyphicon-erase" desc="erase" />
+            <Value id="glyphicon-euro" desc="euro" />
+            <Value id="glyphicon-exclamation-sign" desc="exclamation-sign" />
+            <Value id="glyphicon-expand" desc="expand" />
+            <Value id="glyphicon-export" desc="export" />
+            <Value id="glyphicon-eye-close" desc="eye-close" />
+            <Value id="glyphicon-eye-open" desc="eye-open" />
+            <Value id="glyphicon-facetime-video" desc="facetime-video" />
+            <Value id="glyphicon-fast-backward" desc="fast-backward" />
+            <Value id="glyphicon-fast-forward" desc="fast-forward" />
+            <Value id="glyphicon-file" desc="file" />
+            <Value id="glyphicon-film" desc="film" />
+            <Value id="glyphicon-filter" desc="filter" />
+            <Value id="glyphicon-fire" desc="fire" />
+            <Value id="glyphicon-flag" desc="flag" />
+            <Value id="glyphicon-flash" desc="flash" />
+            <Value id="glyphicon-floppy-disk" desc="floppy-disk" />
+            <Value id="glyphicon-floppy-open" desc="floppy-open" />
+            <Value id="glyphicon-floppy-remove" desc="floppy-remove" />
+            <Value id="glyphicon-floppy-save" desc="floppy-save" />
+            <Value id="glyphicon-floppy-saved" desc="floppy-saved" />
+            <Value id="glyphicon-folder-close" desc="folder-close" />
+            <Value id="glyphicon-folder-open" desc="folder-open" />
+            <Value id="glyphicon-font" desc="font" />
+            <Value id="glyphicon-forward" desc="forward" />
+            <Value id="glyphicon-fullscreen" desc="fullscreen" />
+            <Value id="glyphicon-gbp" desc="gbp" />
+            <Value id="glyphicon-gift" desc="gift" />
+            <Value id="glyphicon-glass" desc="glass" />
+            <Value id="glyphicon-globe" desc="globe" />
+            <Value id="glyphicon-grain" desc="grain" />
+            <Value id="glyphicon-hand-down" desc="hand-down" />
+            <Value id="glyphicon-hand-left" desc="hand-left" />
+            <Value id="glyphicon-hand-right" desc="hand-right" />
+            <Value id="glyphicon-hand-up" desc="hand-up" />
+            <Value id="glyphicon-hdd" desc="hdd" />
+            <Value id="glyphicon-hd-video" desc="hd-video" />
+            <Value id="glyphicon-header" desc="header" />
+            <Value id="glyphicon-headphones" desc="headphones" />
+            <Value id="glyphicon-heart" desc="heart" />
+            <Value id="glyphicon-heart-empty" desc="heart-empty" />
+            <Value id="glyphicon-home" desc="home" />
+            <Value id="glyphicon-hourglass" desc="hourglass" />
+            <Value id="glyphicon-ice-lolly" desc="ice-lolly" />
+            <Value id="glyphicon-ice-lolly-tasted" desc="ice-lolly-tasted" />
+            <Value id="glyphicon-import" desc="import" />
+            <Value id="glyphicon-inbox" desc="inbox" />
+            <Value id="glyphicon-indent-left" desc="indent-left" />
+            <Value id="glyphicon-indent-right" desc="indent-right" />
+            <Value id="glyphicon-info-sign" desc="info-sign" />
+            <Value id="glyphicon-italic" desc="italic" />
+            <Value id="glyphicon-king" desc="king" />
+            <Value id="glyphicon-knight" desc="knight" />
+            <Value id="glyphicon-lamp" desc="lamp" />
+            <Value id="glyphicon-leaf" desc="leaf" />
+            <Value id="glyphicon-level-up" desc="level-up" />
+            <Value id="glyphicon-link" desc="link" />
+            <Value id="glyphicon-list" desc="list" />
+            <Value id="glyphicon-list-alt" desc="list-alt" />
+            <Value id="glyphicon-lock" desc="lock" />
+            <Value id="glyphicon-log-in" desc="log-in" />
+            <Value id="glyphicon-log-out" desc="log-out" />
+            <Value id="glyphicon-magnet" desc="magnet" />
+            <Value id="glyphicon-map-marker" desc="map-marker" />
+            <Value id="glyphicon-menu-down" desc="menu-down" />
+            <Value id="glyphicon-menu-hamburger" desc="menu-hamburger" />
+            <Value id="glyphicon-menu-left" desc="menu-left" />
+            <Value id="glyphicon-menu-right" desc="menu-right" />
+            <Value id="glyphicon-menu-up" desc="menu-up" />
+            <Value id="glyphicon-minus" desc="minus" />
+            <Value id="glyphicon-minus-sign" desc="minus-sign" />
+            <Value id="glyphicon-modal-window" desc="modal-window" />
+            <Value id="glyphicon-move" desc="move" />
+            <Value id="glyphicon-music" desc="music" />
+            <Value id="glyphicon-new-window" desc="new-window" />
+            <Value id="glyphicon-object-align-bottom" desc="object-align-bottom" />
+            <Value id="glyphicon-object-align-horizontal" desc="object-align-horizontal" />
+            <Value id="glyphicon-object-align-left" desc="object-align-left" />
+            <Value id="glyphicon-object-align-right" desc="object-align-right" />
+            <Value id="glyphicon-object-align-top" desc="object-align-top" />
+            <Value id="glyphicon-object-align-vertical" desc="object-align-vertical" />
+            <Value id="glyphicon-off" desc="off" />
+            <Value id="glyphicon-oil" desc="oil" />
+            <Value id="glyphicon-ok" desc="ok" />
+            <Value id="glyphicon-ok-circle" desc="ok-circle" />
+            <Value id="glyphicon-ok-sign" desc="ok-sign" />
+            <Value id="glyphicon-open" desc="open" />
+            <Value id="glyphicon-open-file" desc="open-file" />
+            <Value id="glyphicon-option-horizontal" desc="option-horizontal" />
+            <Value id="glyphicon-option-vertical" desc="option-vertical" />
+            <Value id="glyphicon-paperclip" desc="paperclip" />
+            <Value id="glyphicon-paste" desc="paste" />
+            <Value id="glyphicon-pause" desc="pause" />
+            <Value id="glyphicon-pawn" desc="pawn" />
+            <Value id="glyphicon-pencil" desc="pencil" />
+            <Value id="glyphicon-phone" desc="phone" />
+            <Value id="glyphicon-phone-alt" desc="phone-alt" />
+            <Value id="glyphicon-picture" desc="picture" />
+            <Value id="glyphicon-piggy-bank" desc="piggy-bank" />
+            <Value id="glyphicon-plane" desc="plane" />
+            <Value id="glyphicon-play" desc="play" />
+            <Value id="glyphicon-play-circle" desc="play-circle" />
+            <Value id="glyphicon-plus" desc="plus" />
+            <Value id="glyphicon-plus-sign" desc="plus-sign" />
+            <Value id="glyphicon-print" desc="print" />
+            <Value id="glyphicon-pushpin" desc="pushpin" />
+            <Value id="glyphicon-qrcode" desc="qrcode" />
+            <Value id="glyphicon-queen" desc="queen" />
+            <Value id="glyphicon-question-sign" desc="question-sign" />
+            <Value id="glyphicon-random" desc="random" />
+            <Value id="glyphicon-record" desc="record" />
+            <Value id="glyphicon-refresh" desc="refresh" />
+            <Value id="glyphicon-registration-mark" desc="registration-mark" />
+            <Value id="glyphicon-remove" desc="remove" />
+            <Value id="glyphicon-remove-circle" desc="remove-circle" />
+            <Value id="glyphicon-remove-sign" desc="remove-sign" />
+            <Value id="glyphicon-repeat" desc="repeat" />
+            <Value id="glyphicon-resize-full" desc="resize-full" />
+            <Value id="glyphicon-resize-horizontal" desc="resize-horizontal" />
+            <Value id="glyphicon-resize-small" desc="resize-small" />
+            <Value id="glyphicon-resize-vertical" desc="resize-vertical" />
+            <Value id="glyphicon-retweet" desc="retweet" />
+            <Value id="glyphicon-road" desc="road" />
+            <Value id="glyphicon-ruble" desc="ruble" />
+            <Value id="glyphicon-save" desc="save" />
+            <Value id="glyphicon-saved" desc="saved" />
+            <Value id="glyphicon-save-file" desc="save-file" />
+            <Value id="glyphicon-scale" desc="scale" />
+            <Value id="glyphicon-scissors" desc="scissors" />
+            <Value id="glyphicon-screenshot" desc="screenshot" />
+            <Value id="glyphicon-sd-video" desc="sd-video" />
+            <Value id="glyphicon-search" desc="search" />
+            <Value id="glyphicon-send" desc="send" />
+            <Value id="glyphicon-share" desc="share" />
+            <Value id="glyphicon-share-alt" desc="share-alt" />
+            <Value id="glyphicon-shopping-cart" desc="shopping-cart" />
+            <Value id="glyphicon-signal" desc="signal" />
+            <Value id="glyphicon-sort" desc="sort" />
+            <Value id="glyphicon-sort-by-alphabet" desc="sort-by-alphabet" />
+            <Value id="glyphicon-sort-by-alphabet-alt" desc="sort-by-alphabet-alt" />
+            <Value id="glyphicon-sort-by-attributes" desc="sort-by-attributes" />
+            <Value id="glyphicon-sort-by-attributes-alt" desc="sort-by-attributes-alt" />
+            <Value id="glyphicon-sort-by-order" desc="sort-by-order" />
+            <Value id="glyphicon-sort-by-order-alt" desc="sort-by-order-alt" />
+            <Value id="glyphicon-sound-5-1" desc="sound-5-1" />
+            <Value id="glyphicon-sound-6-1" desc="sound-6-1" />
+            <Value id="glyphicon-sound-7-1" desc="sound-7-1" />
+            <Value id="glyphicon-sound-dolby" desc="sound-dolby" />
+            <Value id="glyphicon-sound-stereo" desc="sound-stereo" />
+            <Value id="glyphicon-star" desc="star" />
+            <Value id="glyphicon-star-empty" desc="star-empty" />
+            <Value id="glyphicon-stats" desc="stats" />
+            <Value id="glyphicon-step-backward" desc="step-backward" />
+            <Value id="glyphicon-step-forward" desc="step-forward" />
+            <Value id="glyphicon-stop" desc="stop" />
+            <Value id="glyphicon-subscript" desc="subscript" />
+            <Value id="glyphicon-subtitles" desc="subtitles" />
+            <Value id="glyphicon-sunglasses" desc="sunglasses" />
+            <Value id="glyphicon-superscript" desc="superscript" />
+            <Value id="glyphicon-tag" desc="tag" />
+            <Value id="glyphicon-tags" desc="tags" />
+            <Value id="glyphicon-tasks" desc="tasks" />
+            <Value id="glyphicon-tent" desc="tent" />
+            <Value id="glyphicon-text-background" desc="text-background" />
+            <Value id="glyphicon-text-color" desc="text-color" />
+            <Value id="glyphicon-text-height" desc="text-height" />
+            <Value id="glyphicon-text-size" desc="text-size" />
+            <Value id="glyphicon-text-width" desc="text-width" />
+            <Value id="glyphicon-th" desc="th" />
+            <Value id="glyphicon-th-large" desc="th-large" />
+            <Value id="glyphicon-th-list" desc="th-list" />
+            <Value id="glyphicon-thumbs-down" desc="thumbs-down" />
+            <Value id="glyphicon-thumbs-up" desc="thumbs-up" />
+            <Value id="glyphicon-time" desc="time" />
+            <Value id="glyphicon-tint" desc="tint" />
+            <Value id="glyphicon-tower" desc="tower" />
+            <Value id="glyphicon-transfer" desc="transfer" />
+            <Value id="glyphicon-trash" desc="trash" />
+            <Value id="glyphicon-tree-conifer" desc="tree-conifer" />
+            <Value id="glyphicon-tree-deciduous" desc="tree-deciduous" />
+            <Value id="glyphicon-triangle-bottom" desc="triangle-bottom" />
+            <Value id="glyphicon-triangle-left" desc="triangle-left" />
+            <Value id="glyphicon-triangle-right" desc="triangle-right" />
+            <Value id="glyphicon-triangle-top" desc="triangle-top" />
+            <Value id="glyphicon-unchecked" desc="unchecked" />
+            <Value id="glyphicon-upload" desc="upload" />
+            <Value id="glyphicon-usd" desc="usd" />
+            <Value id="glyphicon-user" desc="user" />
+            <Value id="glyphicon-volume-down" desc="volume-down" />
+            <Value id="glyphicon-volume-off" desc="volume-off" />
+            <Value id="glyphicon-volume-up" desc="volume-up" />
+            <Value id="glyphicon-warning-sign" desc="warning-sign" />
+            <Value id="glyphicon-wrench" desc="wrench" />
+            <Value id="glyphicon-yen" desc="yen" />
+            <Value id="glyphicon-zoom-in" desc="zoom-in" />
+            <Value id="glyphicon-zoom-out" desc="zoom-out" />
+          </Values>
+        </Prop>
+<Prop>
+  <Id>Size</Id>
+  <Name>Size</Name>
+  <Type>Combo</Type>
+  <Metadata />
+  <Values>
+    <Value id="btn-xs" desc="Extra-Small" />
+    <Value id="btn-sm" desc="Small" />
+    <Value id="btn-md" desc="Medium" />
+    <Value id="btn-lg" desc="Large" />
+  </Values>
+</Prop>
+<Prop>
+  <Id>Style</Id>
+  <Name>Style</Name>
+  <Type>Combo</Type>
+  <Metadata />
+  <Values>
+    <Value id="btn-default" desc="Default" />
+    <Value id="btn-primary" desc="Primary" />
+    <Value id="btn-success" desc="Success" />
+    <Value id="btn-info" desc="Info" />
+    <Value id="btn-warning" desc="Warning" />
+    <Value id="btn-danger" desc="Danger" />
+    <Value id="btn-link" desc="Link" />
+  </Values>
+</Prop>
+<Group>
+   <Name>DataBinding</Name>
+   <Children>
+     <Prop>
+       <Id>DropDownData</Id>
+       <Name>DropDownData</Name>
+       <Type>Custom</Type>
+       <CustomType>Artech.Genexus.Common.CustomTypes.ControlAttVarReference, Artech.Genexus.Common</CustomType>
+              <Metadata>
+                <Value name="FlagSetValueMethod">SetDropDownData</Value>
+                <Value name="FlagGetValueMethod">GetDropDownData</Value>
+                <Value name="FlagDataTypeFilter">BootstrapDropDownData</Value>
+              </Metadata>
+            </Prop>
+          </Children>
+        </Group>
+      </Children>
+    </Group>
+  </Object>
+</Content>

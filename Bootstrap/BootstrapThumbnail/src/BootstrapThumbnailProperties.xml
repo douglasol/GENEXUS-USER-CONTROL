@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<Content xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<Object id="BootstrapThumbnail">
+<Group>
+<Name>General</Name>
+<Type>Main</Type>
+<Childs>
+<Prop>
+<Id>Width</Id>
+ <Name>Width</Name>
+ <Type>Text</Type>
+ <Default />
+ <Metadata />
+  </Prop>
+  <Prop>
+ <Id>Height</Id>
+ <Name>Height</Name>
+ <Type>Text</Type>
+ <Default />
+ <Metadata />
+  </Prop>
+  <Group>
+ <Name>DataBinding</Name>
+ <Childs>
+<Prop>
+  <Id>ThumbnailData</Id>
+  <Name>ThumbnailData</Name>
+  <Type>Custom</Type>
+  <CustomType>Artech.Genexus.Common.CustomTypes.ControlAttVarReference, Artech.Genexus.Common</CustomType>
+  <Metadata>
+ <Value name="FlagSetValueMethod">SetThumbnailData</Value>
+ <Value name="FlagGetValueMethod">GetThumbnailData</Value>
+ <Value name="FlagDataTypeFilter">BootstrapThumbnailData</Value>
+ <Value name="FlagHideVariables">False</Value>
+ <Value name="FlagHideAttributes">True</Value>
+  </Metadata>
+</Prop>
+<Prop>
+  <Id>ButtonClicked</Id>
+  <Name>ButtonClicked</Name>
+  <Type>Custom</Type>
+  <CustomType>Artech.Genexus.Common.CustomTypes.ControlAttVarReference, Artech.Genexus.Common</CustomType>
+  <Metadata>
+ <Value name="FlagSetValueMethod">SetButtonClicked</Value>
+ <Value name="FlagGetValueMethod">GetButtonClicked</Value>
+ <Value name="FlagScope">Runtime</Value>
+ <Value name="FlagDataTypeFilter">Numeric</Value>
+  </Metadata>
+</Prop>
+ </Childs>
+  </Group>
+  <Group>
+ <Name>Button</Name>
+ <Childs>
+<Prop>
+  <Id>Style</Id>
+  <Name>Style</Name>
+  <Type>Combo</Type>
+  <Metadata />
+  <Values>
+ <Value id="btn-default" desc="Default" />
+ <Value id="btn-primary" desc="Primary" />
+ <Value id="btn-success" desc="Success" />
+ <Value id="btn-info" desc="Info" />
+ <Value id="btn-warning" desc="Warning" />
+ <Value id="btn-danger" desc="Danger" />
+ <Value id="btn-link" desc="Link" />
+  </Values>
+</Prop>
+<Prop>
+  <Id>Size</Id>
+  <Name>Size</Name>
+  <Type>Combo</Type>
+  <Metadata />
+  <Values>
+ <Value id="btn-group-xs" desc="Extra-small" />
+ <Value id="btn-group-sm" desc="Small" />
+ <Value id="btn-group-md" desc="Medium" />
+ <Value id="btn-group-lg" desc="Large" />
+  </Values>
+</Prop>
+ </Childs>
+  </Group>
+</Childs>
+ </Group>
+  </Object>
+</Content>

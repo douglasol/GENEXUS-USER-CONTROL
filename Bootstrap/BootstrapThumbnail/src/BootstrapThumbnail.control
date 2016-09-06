@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<ControlDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Version>0.0.2</Version>
+  <DataSourceAllowed>None</DataSourceAllowed>
+  <CustomDataSources />
+  <AutoGrowSupported>false</AutoGrowSupported>
+  <IncludeInControlInfo>false</IncludeInControlInfo>
+  <SupportFiles>
+    <File>images\thumb1.jpg</File>
+    <File>images\thumb2.jpg</File>
+    <File>images\thumb3.jpg</File>
+    <Directory>images</Directory>
+  </SupportFiles>
+  <iOS_SupportFiles />
+  <Android_SupportFiles />
+  <BB_SupportFiles />
+  <RuntimeRender>BootstrapThumbnailRender.js</RuntimeRender>
+  <GxResources>BootstrapThumbnail.xpz</GxResources>
+  <HeightPropertyName>Height</HeightPropertyName>
+  <WidthPropertyName>Width</WidthPropertyName>
+  <ResizeSupported>true</ResizeSupported>
+  <ObjClass>BootstrapThumbnail</ObjClass>
+  <Description>Thumbnail</Description>
+  <Id>00000000-0000-0000-0000-000000000000</Id>
+  <Name>BootstrapThumbnail</Name>
+  <Platforms />
+  <ShowMethod>show</ShowMethod>
+  <ReferencedFiles>
+    <File>BootstrapThumbnail.css</File>
+  </ReferencedFiles>
+  <iOS_ReferencedFiles />
+  <Android_ReferencedFiles />
+  <BB_ReferencedFiles />
+  <Constructor>
+    <Parameters />
+    <Name>BootstrapThumbnail</Name>
+  </Constructor>
+  <PropertiesDefinition>BootstrapThumbnailProperties.xml</PropertiesDefinition>
+  <DesignRender>BootstrapThumbnailRender.xsl</DesignRender>
+  <ToolboxIcon>bootstrap.ico</ToolboxIcon>
+  <ControlType />
+  <Categories>
+    <Category>Bootstrap</Category>
+  </Categories>
+  <Events>
+    <Event>Click</Event>
+  </Events>
+  <Methods>
+    <Method>
+      <ReturnType />
+      <Parameters/>
+      <Signature>Refresh()</Signature>
+      <Name>Refresh</Name>
+      <Namespace />
+      <FullName>Refresh</FullName>
+    </Method>
+  </Methods>
+  <Actions>
+    <Action>
+      <Order>0</Order>
+      <ActionProperties>
+        <Property>
+          <Key>
+            <string>Name</string>
+          </Key>
+          <Value>
+            <string>BootstrapThumbnailData</string>
+          </Value>
+        </Property>
+        <Property>
+          <Key>
+            <string>ATTCUSTOMTYPE</string>
+          </Key>
+          <Value>
+            <string>BootstrapThumbnailData</string>
+          </Value>
+        </Property>
+      </ActionProperties>
+      <ActionType>VarDeclaration</ActionType>
+    </Action>
+    <Action>
+      <Order>1</Order>
+      <ActionProperties>
+        <Property>
+          <Key>
+            <string>ThumbnailData</string>
+          </Key>
+          <Value>
+            <string>&amp;BootstrapThumbnailData</string>
+          </Value>
+        </Property>
+      </ActionProperties>
+      <Data />
+      <ActionType>SetPropertyToControl</ActionType>
+    </Action>
+    <Action>
+      <Order>2</Order>
+      <ActionProperties />
+      <Data>
+
+/*
+Event Start
+	&amp;BootstrapThumbnailData = BootstrapThumbnailDataDP()
+Endevent
+
+Event BootstrapThumbnail1.Click
+	msg('botao clicado :' + BootstrapThumbnail1.ButtonClicked)
+EndEvent
+*/
+	  </Data>
+      <ActionType>CodeSnippet</ActionType>
+    </Action>
+  </Actions>
+  <IsPublic>true</IsPublic>
+  <Android_IsScrollable>false</Android_IsScrollable>
+</ControlDefinition>

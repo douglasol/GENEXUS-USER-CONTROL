@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Content xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Object id="Retorno">
+    <Group>
+      <Name>General</Name>
+      <Type>Main</Type>
+      <Childs>
+        <Prop>
+          <Id>Simples</Id>
+          <Name>Simples</Name>
+          <Type>Text</Type>
+          <Metadata />
+        </Prop>
+        <Prop>
+          <Id>Atributo</Id>
+          <Name>Atributo</Name>
+          <Type>Custom</Type>
+          <CustomType>Artech.Genexus.Common.CustomTypes.ControlAttVarReference, Artech.Genexus.Common</CustomType>
+          <Metadata>
+            <Value name="FlagSetValueMethod">SetAtributo</Value>
+            <Value name="FlagGetValueMethod">GetAtributo</Value>
+            <Value name="FlagDataTypeFilter">ClienteSDT</Value>
+          </Metadata>
+        </Prop>
+      </Childs>
+    </Group>
+  </Object>
+</Content>

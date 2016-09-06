@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<Content xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Object id="GooglePieChart">
+    <Group>
+      <Name>General</Name>
+      <Type>Main</Type>
+      <Children>
+	  
+		<Prop>
+		  <Id>Width</Id>
+		  <Name>Width</Name>
+		  <Type>Integer</Type>
+		  <Metadata />
+		</Prop>
+
+		<Prop>
+		  <Id>Height</Id>
+		  <Name>Height</Name>
+		  <Type>Integer</Type>
+		  <Metadata />
+		</Prop>
+		
+		<Prop>
+		  <Id>Title</Id>
+		  <Name>Title</Name>
+		  <Type>Text</Type>
+		  <Metadata />
+		</Prop>
+		  
+		<Prop>
+		  <Id>ColumnTitle</Id>
+		  <Name>ColumnTitle</Name>
+		  <Type>Text</Type>
+		  <Metadata />
+		</Prop>
+		
+		<Prop>
+		  <Id>ColumnNumberTitle</Id>
+		  <Name>ColumnNumberTitle</Name>
+		  <Type>Text</Type>
+		  <Metadata />
+		</Prop>
+
+		<Prop>
+		  <Id>Data</Id>
+		  <Name>Data</Name>
+		  <Type>Custom</Type>          
+		  <CustomType>Artech.GeneXus.Common.CustomTypes.ControlAttVarReference, Artech.GeneXus.Common</CustomType>
+		  <Metadata>
+			 <Value name="FlagSetValueMethod">SetData</Value>
+			 <Value name="FlagGetValueMethod">GetData</Value>
+			 <Value name="FlagDataTypeFilter">GooglePieChartSDT</Value>
+			</Metadata>
+		</Prop>
+      
+	  </Children>
+    </Group>
+  </Object>
+</Content>
+
+
+
+

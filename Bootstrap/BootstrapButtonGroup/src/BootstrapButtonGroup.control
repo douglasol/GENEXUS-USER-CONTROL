@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<ControlDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Id>536b6ccb-7838-4fb1-8ab1-655aa703e801</Id>
+	<Name>BootstrapButtonGroup</Name>
+  <Description>ButtonGroup</Description>
+	<ObjClass>BootstrapButtonGroup</ObjClass>
+	<Version>0.0.2</Version>
+	<RuntimeRender>BootstrapButtonGroupRender.js</RuntimeRender>
+	<PropertiesDefinition>BootstrapButtonGroupProperties.xml</PropertiesDefinition>
+	<DesignRender>BootstrapButtonGroupRender.xsl</DesignRender>
+	<GxResources>BootstrapButtonGroup.xpz</GxResources>
+	<ToolboxIcon>bootstrap.ico</ToolboxIcon>
+
+	<ShowMethod>show</ShowMethod>
+	<ResizeSupported>false</ResizeSupported>
+	<DataSourceAllowed>None</DataSourceAllowed>
+	<CustomDataSources />
+	<AutoGrowSupported>false</AutoGrowSupported>
+	<IncludeInControlInfo>false</IncludeInControlInfo>
+	<SupportFiles />
+	<iOS_SupportFiles />
+	<Android_SupportFiles />
+	<BB_SupportFiles />
+	<Platforms>
+		<Platform>Web</Platform>
+		<Platform>WebLayout</Platform>
+	</Platforms>
+	<iOS_ReferencedFiles />
+	<Android_ReferencedFiles />
+	<BB_ReferencedFiles />
+	<Constructor>
+		<Parameters />
+		<Name>BootstrapButtonGroup</Name>
+	</Constructor>
+	<ControlType></ControlType>
+
+	<Categories>
+	   <Category>Bootstrap</Category>
+	</Categories>
+
+	<ReferencedFiles>
+	   <File>bootstrap.3.3.7.min.css</File>
+		 <File>jquery-1.12.4.min.js</File>
+		 <File>bootstrap.3.3.7.min.js</File>
+	</ReferencedFiles>
+
+	<Events>
+		<Event>Click</Event>
+	</Events>
+
+	<Methods>
+		<!-- <Method>
+			<Name>MethodName</Name>
+			<Signature>SetMode( myMode: Modes, text: Character)</Signature>
+			<Parameters>
+				<Parameter>Modes</Parameter>
+				<Parameter>Character</Parameter>
+			</Parameters>
+		</Method> -->
+	</Methods>
+	<Actions>
+
+<Action>
+	<Order>0</Order>
+	<ActionProperties>
+		<Property>
+			<Key>
+				<string>Name</string>
+			</Key>
+			<Value>
+				<string>BootstrapButtonGroup</string>
+			</Value>
+		</Property>
+		<Property>
+			<Key>
+				<string>ATTCUSTOMTYPE</string>
+			</Key>
+			<Value>
+				<string>BootstrapButtonGroupSDT</string>
+			</Value>
+		</Property>
+	</ActionProperties>
+	<Data />
+	<ActionType>VarDeclaration</ActionType>
+</Action>
+
+<Action>
+   <Order>1</Order>
+   <ActionProperties>
+      <Property>
+         <Key>
+            <string>Data</string>
+         </Key>
+         <Value>
+            <string>&amp;BootstrapButtonGroup</string>
+         </Value>
+      </Property>
+   </ActionProperties>
+   <Data />
+   <ActionType>SetPropertyToControl</ActionType>
+</Action>
+
+<Action>
+	<Order>2</Order>
+	<ActionProperties />
+	<Data>
+Sub 'LoadBootstrapButtonGroup'
+   &amp;BootstrapButtonGroup = BootstrapButtonGroupDP()
+EndSub
+
+//Event Start
+//	do 'LoadBootstrapButtonGroup'
+//Endevent
+
+//Event BootstrapButtonGroup1.Click
+//   msg('Botão pressionado '+BootstrapButtonGroup1.ButtonClicked)
+//EndEvent
+
+	</Data>
+	<ActionType>CodeSnippet</ActionType>
+</Action>
+
+</Actions>
+
+
+
+	<IsPublic>true</IsPublic>
+	<Android_IsScrollable>false</Android_IsScrollable>
+</ControlDefinition>

@@ -1,0 +1,159 @@
+<?xml version="1.0"?>
+<ControlDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Version>0.0.9</Version>
+  <DataSourceAllowed>None</DataSourceAllowed>
+  <CustomDataSources />
+  <AutoGrowSupported>false</AutoGrowSupported>
+  <IncludeInControlInfo>false</IncludeInControlInfo>
+  <SupportFiles>
+    <Directory>images</Directory>
+  </SupportFiles>
+  <iOS_SupportFiles />
+  <Android_SupportFiles />
+  <BB_SupportFiles />
+  <RuntimeRender>BootstrapCarouselRender.js</RuntimeRender>
+  <GxResources>BootstrapCarousel.xpz</GxResources>
+  <HeightPropertyName>Height</HeightPropertyName>
+  <WidthPropertyName>Width</WidthPropertyName>
+  <ResizeSupported>false</ResizeSupported>
+  <ObjClass>BootstrapCarousel</ObjClass>
+  <Description>Carousel</Description>
+  <Id>00000000-0000-0000-0000-000000000000</Id>
+  <Name>BootstrapCarousel</Name>
+  <Platforms />
+  <ShowMethod>show</ShowMethod>
+  <ReferencedFiles>
+    <File>BootstrapCarousel.css</File>
+  </ReferencedFiles>
+  <iOS_ReferencedFiles />
+  <Android_ReferencedFiles />
+  <BB_ReferencedFiles />
+  <Constructor>
+    <Parameters />
+    <Name>BootstrapCarousel</Name>
+  </Constructor>
+  <PropertiesDefinition>BootstrapCarouselProperties.xml</PropertiesDefinition>
+  <DesignRender>BootstrapCarouselRender.xsl</DesignRender>
+  <ToolboxIcon>Bootstrap.ico</ToolboxIcon>
+  <ControlType />
+  <Categories>
+    <Category>Bootstrap</Category>
+  </Categories>
+  <Events />
+  <Methods />
+  <Actions>
+    <Action>
+      <Order>0</Order>
+      <ActionProperties>
+        <Property>
+          <Key>
+            <string>Name</string>
+          </Key>
+          <Value>
+            <string>Carousel</string>
+          </Value>
+        </Property>
+        <Property>
+          <Key>
+            <string>ATTCUSTOMTYPE</string>
+          </Key>
+          <Value>
+            <string>BootstrapCarouselData</string>
+          </Value>
+        </Property>
+      </ActionProperties>
+      <Data />
+      <ActionType>VarDeclaration</ActionType>
+    </Action>
+    <Action>
+      <Order>1</Order>
+      <ActionProperties>
+        <Property>
+          <Key>
+            <string>Name</string>
+          </Key>
+          <Value>
+            <string>image</string>
+          </Value>
+        </Property>
+        <Property>
+          <Key>
+            <string>ATTCUSTOMTYPE</string>
+          </Key>
+          <Value>
+            <string>BootstrapCarouselData.image</string>
+          </Value>
+        </Property>
+      </ActionProperties>
+      <Data />
+      <ActionType>VarDeclaration</ActionType>
+    </Action>
+    <Action>
+      <Order>2</Order>
+      <ActionProperties>
+        <Property>
+          <Key>
+            <string>CarouselData</string>
+          </Key>
+          <Value>
+            <string>&amp;Carousel</string>
+          </Value>
+        </Property>
+      </ActionProperties>
+      <Data />
+      <ActionType>SetPropertyToControl</ActionType>
+    </Action>
+    <Action>
+      <Order>3</Order>
+      <ActionProperties />
+      <Data>
+//Event Start
+//	do  'CarouselLoad'
+//Endevent
+
+Sub 'CarouselLoad'
+	&amp;Carousel.width		= '40%'
+
+	&amp;image = new()
+	&amp;image.name	= 'Bateaux'
+	&amp;image.description = 'Bateaux Mouches on the Seine, Paris'
+	&amp;image.alt = 'Bateaux Mouches on the Seine, Paris'
+	&amp;image.image = 'bootstrapcarousel/images/9359792578_9ca5949095_z.jpg'
+	&amp;image.link  = 'http://www.google.com'
+	&amp;image.linktarget = '_blank'
+	&amp;Carousel.images.Add(&amp;image)
+
+	&amp;image = new()
+	&amp;image.name	= 'PontArts'
+	&amp;image.description = 'Pont des Arts, Paris'
+	&amp;image.alt = 'Pont des Arts, Paris'
+	&amp;image.image = 'bootstrapcarousel/images/9568816961_91ae5d36b4_z.jpg'
+	&amp;image.link  = '#'
+	&amp;image.linktarget = ''
+	&amp;Carousel.images.Add(&amp;image)
+
+	&amp;image = new()
+	&amp;image.name	= 'Pont'
+	&amp;image.description = 'Pont Alexandre III, Paris'
+	&amp;image.alt = 'Pont Alexandre III, Paris'
+	&amp;image.image = 'bootstrapcarousel/images/12334157545_f0423af7d9_z.jpg'
+	&amp;image.link  = '#'
+	&amp;image.linktarget = ''
+	&amp;Carousel.images.Add(&amp;image)
+
+	&amp;image = new()
+	&amp;image.name	= 'Seine'
+	&amp;image.description = 'Sunset on the Seine'
+	&amp;image.alt = 'Sunset on the Seine'
+	&amp;image.image = 'bootstrapcarousel/images/15054976301_f88f512967_z.jpg'
+	&amp;image.link  = '#'
+	&amp;image.linktarget = ''
+	&amp;Carousel.images.Add(&amp;image)
+EndSub
+		</Data>
+      <ActionType>CodeSnippet</ActionType>
+    </Action>
+  </Actions>
+  <IsPublic>true</IsPublic>
+  <Android_IsScrollable>false</Android_IsScrollable>
+</ControlDefinition>

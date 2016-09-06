@@ -1,0 +1,181 @@
+<?xml version="1.0"?>
+<ControlDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Version>0.0.3</Version>
+  <DataSourceAllowed>None</DataSourceAllowed>
+  <CustomDataSources />
+  <AutoGrowSupported>false</AutoGrowSupported>
+  <IncludeInControlInfo>false</IncludeInControlInfo>
+  <SupportFiles />
+  <iOS_SupportFiles />
+  <Android_SupportFiles />
+  <BB_SupportFiles />
+  <RuntimeRender>BootstrapDropdownRender.js</RuntimeRender>
+  <GxResources>BootstrapDropdown.xpz</GxResources>
+  <HeightPropertyName>Height</HeightPropertyName>
+  <WidthPropertyName>Width</WidthPropertyName>
+  <ResizeSupported>false</ResizeSupported>
+  <ObjClass>BootstrapDropdown</ObjClass>
+  <Description>Dropdown</Description>
+  <Id>00000000-0000-0000-0000-000000000000</Id>
+  <Name>BootstrapDropdown</Name>
+  <Platforms />
+  <ShowMethod>show</ShowMethod>
+
+  <iOS_ReferencedFiles />
+  <Android_ReferencedFiles />
+  <BB_ReferencedFiles />
+  <Constructor>
+    <Parameters />
+    <Name>BootstrapDropdown</Name>
+  </Constructor>
+  <PropertiesDefinition>BootstrapDropdownProperties.xml</PropertiesDefinition>
+  <DesignRender>BootstrapDropdownRender.xsl</DesignRender>
+  <ToolboxIcon>bootstrap.ico</ToolboxIcon>
+  <ControlType />
+  <Categories>
+    <Category>Bootstrap</Category>
+  </Categories>
+
+  <ReferencedFiles>
+	<File>BootstrapDropdown.xpz</File>
+  </ReferencedFiles>
+
+  <Events />
+  <Methods />
+	<Actions>
+		<Action>
+			<Order>0</Order>
+			<ActionProperties>
+				<Property>
+					<Key>
+						<string>Name</string>
+					</Key>
+					<Value>
+						<string>BootstrapDropdownData</string>
+					</Value>
+				</Property>
+				<Property>
+					<Key>
+						<string>ATTCUSTOMTYPE</string>
+					</Key>
+					<Value>
+						<string>BootstrapDropdownData</string>
+					</Value>
+				</Property>
+			</ActionProperties>
+			<Data />
+			<ActionType>VarDeclaration</ActionType>
+		</Action>
+		<Action>
+			<Order>1</Order>
+			<ActionProperties>
+				<Property>
+					<Key>
+						<string>Name</string>
+					</Key>
+					<Value>
+						<string>dropdown</string>
+					</Value>
+				</Property>
+				<Property>
+					<Key>
+						<string>ATTCUSTOMTYPE</string>
+					</Key>
+					<Value>
+						<string>BootstrapDropDownData.dropdown</string>
+					</Value>
+				</Property>
+			</ActionProperties>
+			<Data />
+			<ActionType>VarDeclaration</ActionType>
+		</Action>
+		<Action>
+			<Order>2</Order>
+			<ActionProperties>
+				<Property>
+					<Key>
+						<string>DropDownData</string>
+					</Key>
+					<Value>
+						<string>&amp;BootstrapDropdownData</string>
+					</Value>
+				</Property>
+			</ActionProperties>
+			<Data />
+			<ActionType>SetPropertyToControl</ActionType>
+		</Action>
+		<Action>
+			<Order>3</Order>
+			<ActionProperties />
+			<Data>
+//Event Start
+//   do 'DropDownLoad'
+//EndEvent
+
+Sub 'DropDownLoad'
+	&amp;BootstrapDropdownData.id      = '1'
+	&amp;BootstrapDropdownData.caption = 'Menu'
+
+	&amp;dropdown = new()
+	&amp;dropdown.caption	= 'Links'
+	&amp;dropdown.link	= ''
+	&amp;dropdown.linktarget	= ''
+	&amp;dropdown.divider	= false
+	&amp;dropdown.header	= true
+	&amp;dropdown.badge		= 0
+	&amp;BootstrapDropdownData.dropdowngroup.Add(&amp;dropdown)
+
+	&amp;dropdown = new()
+	&amp;dropdown.caption	= 'Google'
+	&amp;dropdown.link	= 'http://www.google.com'
+	&amp;dropdown.linktarget	= '_blank'
+	&amp;dropdown.divider	= false
+	&amp;dropdown.header	= false
+	&amp;dropdown.badge		= 0
+	&amp;BootstrapDropdownData.dropdowngroup.Add(&amp;dropdown)
+
+	&amp;dropdown = new()
+	&amp;dropdown.caption	= 'Microsoft'
+	&amp;dropdown.link	= 'http://www.microsoft.com'
+	&amp;dropdown.linktarget	= '_blank'
+	&amp;dropdown.divider	= false
+	&amp;dropdown.header	= false
+	&amp;dropdown.badge		= 0
+	&amp;BootstrapDropdownData.dropdowngroup.Add(&amp;dropdown)
+
+	&amp;dropdown = new()
+	&amp;dropdown.caption	= 'Yahoo'
+	&amp;dropdown.link	= 'http://www.yahoo.com'
+	&amp;dropdown.linktarget	= '_blank'
+	&amp;dropdown.divider	= false
+	&amp;dropdown.header	= false
+	&amp;dropdown.badge		= 0
+	&amp;BootstrapDropdownData.dropdowngroup.Add(&amp;dropdown)
+
+	&amp;dropdown = new()
+	&amp;dropdown.caption	= ''
+	&amp;dropdown.link	= ''
+	&amp;dropdown.linktarget	= ''
+	&amp;dropdown.divider	= true
+	&amp;dropdown.header	= false
+	&amp;dropdown.badge		= 0
+	&amp;BootstrapDropdownData.dropdowngroup.Add(&amp;dropdown)
+
+	&amp;dropdown = new()
+	&amp;dropdown.caption	= 'Gmail'
+	&amp;dropdown.link	= ''
+	&amp;dropdown.linktarget	= ''
+	&amp;dropdown.divider	= false
+	&amp;dropdown.glyphicon = 'glyphicon-envelope'
+	&amp;dropdown.header	= false
+	&amp;dropdown.badge		= 10
+	&amp;BootstrapDropdownData.dropdowngroup.Add(&amp;dropdown)
+
+EndSub
+    		</Data>
+			<ActionType>CodeSnippet</ActionType>
+		</Action>
+	</Actions>
+  <IsPublic>true</IsPublic>
+  <Android_IsScrollable>false</Android_IsScrollable>
+</ControlDefinition>

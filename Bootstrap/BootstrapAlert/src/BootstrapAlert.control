@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<ControlDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Id>16b787e4-2bca-4e17-9edc-d39d7411a596</Id>
+	<Name>BootstrapAlert</Name>
+	<Description>Alert</Description>
+	<ObjClass>BootstrapAlert</ObjClass>
+	<Version>0.0.1</Version>
+	<RuntimeRender>BootstrapAlertRender.js</RuntimeRender>
+	<PropertiesDefinition>BootstrapAlertProperties.xml</PropertiesDefinition>
+	<DesignRender>BootstrapAlertRender.xsl</DesignRender>
+	<GxResources>BoostrapAlert.xpz</GxResources>
+	<ToolboxIcon>bootstrap.ico</ToolboxIcon>
+
+	<ShowMethod>show</ShowMethod>
+	<ResizeSupported>false</ResizeSupported>
+	<DataSourceAllowed>None</DataSourceAllowed>
+	<CustomDataSources />
+	<AutoGrowSupported>false</AutoGrowSupported>
+	<IncludeInControlInfo>false</IncludeInControlInfo>
+	<SupportFiles />
+	<iOS_SupportFiles />
+	<Android_SupportFiles />
+	<BB_SupportFiles />
+	<Platforms>
+		<Platform>Web</Platform>
+		<Platform>WebLayout</Platform>
+	</Platforms>
+	<ReferencedFiles />
+	<iOS_ReferencedFiles />
+	<Android_ReferencedFiles />
+	<BB_ReferencedFiles />
+	<Constructor>
+		<Parameters />
+		<Name>BootstrapAlert</Name>
+	</Constructor>
+	<ControlType></ControlType>
+
+	<Categories>
+	   <Category>Bootstrap</Category>
+	</Categories>
+
+	<Events>
+		<!-- <Event>EventName</Event> -->
+	</Events>
+
+	<Methods>
+		<Method>
+			<Name>ShowAlert</Name>
+			<Signature>ShowAlert(SDT: Message)</Signature>
+			<Parameters>
+				<Parameter>Message</Parameter>
+			</Parameters>
+		</Method>
+	</Methods>
+
+	<Actions>
+
+		<Action>
+			<Order>0</Order>
+			<ActionProperties>
+				<Property>
+					<Key>
+						<string>Name</string>
+					</Key>
+					<Value>
+						<string>mensagem</string>
+					</Value>
+				</Property>
+				<Property>
+					<Key>
+						<string>ATTCUSTOMTYPE</string>
+					</Key>
+					<Value>
+						<string>BootstrapAlertSDT</string>
+					</Value>
+				</Property>
+			</ActionProperties>
+			<Data />
+			<ActionType>VarDeclaration</ActionType>
+		</Action>
+
+		<Action>
+			<Order>1</Order>
+			<ActionProperties />
+			<Data>
+//Event Enter
+//   &amp;mensagem.text  = 'Texto da mensagem'
+//   &amp;mensagem.title = 'Titulo!'
+//   &amp;mensagem.type  = BootstrapAlertType.Danger
+//   &amp;mensagem.time  = 5
+//   BootstrapAlert1.ShowAlert(&amp;mensagem)
+//Endevent
+			</Data>
+			<ActionType>CodeSnippet</ActionType>
+		</Action>
+
+	</Actions>
+	<IsPublic>true</IsPublic>
+	<Android_IsScrollable>false</Android_IsScrollable>
+</ControlDefinition>

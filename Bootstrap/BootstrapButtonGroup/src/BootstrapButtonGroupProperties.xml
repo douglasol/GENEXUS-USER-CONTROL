@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<Content xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Object id="BootstrapButtonGroup">
+		<Group>
+			<Name>General</Name>
+			<Type>Main</Type>
+
+			<Children>
+
+				<Prop>
+					 <Id>Orientation</Id>
+					 <Name>Orientation</Name>
+					 <Type>Combo</Type>
+					 <Metadata />
+					 <Values>
+						 <Value id="btn-group" desc="Horizontal" />
+						 <Value id="btn-group-vertical" desc="Vertical" />
+					 </Values>
+				 </Prop>
+
+				 <Group>
+					 <Name>Data Binding</Name>
+					 <Children>
+
+						 <Prop>
+		           <Id>Data</Id>
+		           <Name>Data</Name>
+		           <Type>Custom</Type>
+		           <CustomType>Artech.Genexus.Common.CustomTypes.ControlAttVarReference, Artech.Genexus.Common</CustomType>
+		           <Metadata>
+		             <Value name="FlagSetValueMethod">SetData</Value>
+		             <Value name="FlagGetValueMethod">GetData</Value>
+		             <Value name="FlagDataTypeFilter">BootstrapButtonGroup</Value>
+		           </Metadata>
+		         </Prop>
+
+						 <Prop>
+							 <Id>ButtonClicked</Id>
+							 <Name>ButtonClicked</Name>
+							 <Type>Custom</Type>
+							 <CustomType>Artech.Genexus.Common.CustomTypes.ControlAttVarReference, Artech.Genexus.Common</CustomType>
+							 <Metadata>
+								 <Value name="FlagSetValueMethod">SetButtonClicked</Value>
+								 <Value name="FlagGetValueMethod">GetButtonClicked</Value>
+								 <Value name="FlagScope">Runtime</Value>
+							 </Metadata>
+						 </Prop>
+
+					 </Children>
+				 </Group>
+
+			</Children>
+		</Group>
+	</Object>
+</Content>

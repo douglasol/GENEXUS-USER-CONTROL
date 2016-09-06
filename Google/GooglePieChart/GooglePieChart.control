@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<ControlDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Version>1.7</Version>
+  <DataSourceAllowed>None</DataSourceAllowed>
+  <CustomDataSources />
+  <AutoGrowSupported>false</AutoGrowSupported>
+  <IncludeInControlInfo>false</IncludeInControlInfo>
+  <SupportFiles />
+  <iOS_SupportFiles />
+  <Android_SupportFiles />
+  <BB_SupportFiles />
+  <RuntimeRender>GooglePieChartRender.js</RuntimeRender>
+  <GxResources>GooglePieChart.xpz</GxResources>
+  <HeightPropertyName>Height</HeightPropertyName>
+  <WidthPropertyName>Width</WidthPropertyName>
+  <ResizeSupported>false</ResizeSupported>
+  <ObjClass>GooglePieChart</ObjClass>
+  <Description>GooglePieChart</Description>
+  <Id>00000000-0000-0000-0000-000000000000</Id>
+  <Name>GooglePieChart</Name>
+  <Platforms />
+  <ShowMethod>show</ShowMethod>
+  <ReferencedFiles>
+	<File>https://www.gstatic.com/charts/loader.js</File>
+  </ReferencedFiles>
+  <iOS_ReferencedFiles />
+  <Android_ReferencedFiles />
+  <BB_ReferencedFiles />
+  <Constructor>
+    <Parameters />
+    <Name>GooglePieChart</Name>
+  </Constructor>
+  <PropertiesDefinition>GooglePieChartProperties.xml</PropertiesDefinition>
+  <DesignRender>GooglePieChartRender.xsl</DesignRender>
+  <ToolboxIcon>google.ico</ToolboxIcon>
+  <ControlType />
+  <Categories>
+    <Category>Google</Category>
+  </Categories>
+  <Events />
+
+<Actions>
+  <Action>
+   <Order>0</Order>
+   <ActionProperties>
+      <Property>
+          <Key>
+            <string>Name</string>
+          </Key>
+          <Value>
+            <string>Dados</string>
+          </Value>
+        </Property>
+        <Property>
+          <Key>
+            <string>ATTCUSTOMTYPE</string>
+          </Key>
+          <Value>
+            <string>GooglePieChartSDT</string>
+          </Value>
+        </Property>
+   </ActionProperties>
+   <Data />
+   <ActionType>VarDeclaration</ActionType>
+ </Action>
+ <Action>
+  <Order>1</Order>
+  <ActionProperties>
+    <Property>
+        <Key>
+            <string>Data</string>
+        </Key>
+        <Value>
+            <string>&amp;Dados</string>
+        </Value>
+    </Property>
+  </ActionProperties>
+  <Data />
+  <ActionType>SetPropertyToControl</ActionType>
+ </Action>
+ <Action> 
+  <Order>2</Order> 
+  <Data>
+
+Sub 'LoadGooglePieChart'
+   &amp;Dados = GooglePieChartDP()
+EndSub
+
+// Descomente o evento para acionar a carga do controle
+// Event Start
+//    do 'LoadGooglePieChart'
+// EndSub
+
+  </Data>
+  <ActionType>CodeSnippet</ActionType>
+ </Action>
+</Actions>
+
+  
+  <IsPublic>true</IsPublic>
+  <Android_IsScrollable>false</Android_IsScrollable>
+</ControlDefinition>

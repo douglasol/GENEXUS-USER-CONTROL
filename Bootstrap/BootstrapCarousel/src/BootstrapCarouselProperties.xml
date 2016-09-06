@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Content xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Object id="BootstrapCarousel">
+    <Group>
+      <Name>General</Name>
+      <Type>Main</Type>
+      <Children>
+        <Group>
+          <Name>Data Binding</Name>
+          <Children>
+            <Prop>
+              <Id>CarouselData</Id>
+              <Name>CarouselData</Name>
+              <Type>Custom</Type>
+              <CustomType>Artech.Genexus.Common.CustomTypes.ControlAttVarReference, Artech.Genexus.Common</CustomType>
+              <Metadata>
+                <Value name="FlagSetValueMethod">SetCarouselData</Value>
+                <Value name="FlagGetValueMethod">GetCarouselData</Value>
+                <Value name="FlagDataTypeFilter">BootstrapCarouselData</Value>
+              </Metadata>
+            </Prop>
+          </Children>
+        </Group>
+      </Children>
+    </Group>
+  </Object>
+</Content>

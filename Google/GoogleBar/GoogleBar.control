@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<ControlDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Version>1.0</Version>
+  <DataSourceAllowed>None</DataSourceAllowed>
+  <CustomDataSources />
+  <AutoGrowSupported>false</AutoGrowSupported>
+  <IncludeInControlInfo>false</IncludeInControlInfo>
+  <SupportFiles />
+  <iOS_SupportFiles />
+  <Android_SupportFiles />
+  <BB_SupportFiles />
+  <RuntimeRender>GoogleBarRender.js</RuntimeRender>
+  <HeightPropertyName>Height</HeightPropertyName>
+  <WidthPropertyName>Width</WidthPropertyName>
+  <ResizeSupported>false</ResizeSupported>
+  <ObjClass>GoogleBar</ObjClass>
+  <Description>GoogleBar</Description>
+  <Id>00000000-0000-0000-0000-000000000000</Id>
+  <Name>GoogleBar</Name>
+  <Platforms />
+  <ShowMethod>show</ShowMethod>
+  
+  <ReferencedFiles>
+	<File>https://www.gstatic.com/charts/loader.js</File>
+  </ReferencedFiles>
+  
+  <iOS_ReferencedFiles />
+  <Android_ReferencedFiles />
+  <BB_ReferencedFiles />
+  <Constructor>
+    <Parameters />
+    <Name>GoogleBar</Name>
+  </Constructor>
+  <PropertiesDefinition>GoogleBarProperties.xml</PropertiesDefinition>
+  <DesignRender>GoogleBarRender.xsl</DesignRender>
+  <ToolboxIcon>google.ico</ToolboxIcon>
+  <ControlType />
+  <Categories>
+    <Category>Google</Category>
+  </Categories>
+  <Events />
+  <Actions />
+  <IsPublic>true</IsPublic>
+  <Android_IsScrollable>false</Android_IsScrollable>
+</ControlDefinition>
