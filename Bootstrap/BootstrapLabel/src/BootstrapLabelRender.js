@@ -1,3 +1,12 @@
+/*  BootstrapLabel
+
+	Apresenta uma mensagem destacada
+
+    --------------------------------------------------------------
+	User Control: Desenvolvendo controles com GeneXus
+	15/08/2016, Douglas Hamilton de Oliveira
+
+*/
 function BootstrapLabel($)
 {
 	this.show = function()
@@ -8,10 +17,5 @@ function BootstrapLabel($)
 		html += '</span>';
 
 		this.setHtml(html);
-	}
-
-	this.destroy = function()
-	{
-    	// Add your cleanup code here. This method will be called when the control is destroyed.
 	}
 }

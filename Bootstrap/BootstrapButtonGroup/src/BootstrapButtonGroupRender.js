@@ -1,3 +1,12 @@
+/*  BootstrapButtonGroup
+
+	Apresenta um grupo de botões
+
+    --------------------------------------------------------------
+	User Control: Desenvolvendo controles com GeneXus
+	15/08/2016, Douglas Hamilton de Oliveira
+
+*/
 function BootstrapButtonGroup($)
 {
 	this.SetData = function(data)
@@ -22,7 +31,6 @@ function BootstrapButtonGroup($)
 
 	this.show = function()
 	{
-
 		var outerMe 	= this.me();
 		this.Orientation = (this.Orientation=='') ? 'btn-group' : this.Orientation;
 
@@ -67,8 +75,7 @@ function BootstrapButtonGroup($)
 		}
 
 		html += '</div>';
-
-		$(this.getContainerControl()).html(html);
+		this.setHtml(html);
 	}
 
 	this.default = function(button)
@@ -84,10 +91,5 @@ function BootstrapButtonGroup($)
 	{
 		this.ButtonClicked = id;
 		this.Click();
-	}
-
-	this.destroy = function()
-	{
-    	// Add your cleanup code here. This method will be called when the control is destroyed.
 	}
 }

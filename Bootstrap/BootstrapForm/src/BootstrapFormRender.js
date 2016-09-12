@@ -1,3 +1,12 @@
+/*  BootstrapForm
+
+	Apresenta um formulário dinamico
+
+    --------------------------------------------------------------
+	User Control: Desenvolvendo controles com GeneXus
+	15/08/2016, Douglas Hamilton de Oliveira
+
+*/
 function BootstrapForm($)
 {
 	this.SetFormData = function(data)
@@ -19,20 +28,11 @@ function BootstrapForm($)
 			{
 				html += '<div class="form-group">';
 				if (control.caption!=''){
-					html += '<label for="'
-					 + control.name
-					 + '" class="control-label">';
+					html += '<label for="'+ control.name+ '" class="control-label">';
 					html += control.caption;
 					html += '</label>';
 				}
-				html += '<'+control.control
-				 + ' type="'
-				 + control.type
-				 + '" class="form-control" id="'
-				 + control.name
-				 + '" placeholder="'
-				 + control.invitemessage
-				 + '">';
+				html += '<'+control.control+ ' type="'+ control.type+ '" class="form-control" id="'+ control.name+ '" placeholder="'+ control.invitemessage+ '">';
 
 				if (control.control=='textarea'){
 					html += '</textarea>';
@@ -45,33 +45,17 @@ function BootstrapForm($)
 			{
 				html += '<div class="form-group">';
 				if (control.caption!=''){
-					html += '  <label for="'
-					 + control.name
-					 + '" class="control-label">'
-					 + control.caption
-					 + '</label>';
+					html += '  <label for="'+ control.name+ '" class="control-label">'+ control.caption+ '</label>';
 				}
 				if (control.inline==true){
-					html += '<div class="'
-					 + control.control
-					 + '">';
+					html += '<div class="'+ control.control+ '">';
 					for (var a=0; a<control.options.length; a++)
 					{
 						control.options[a].checked = false;
 						var option = control.options[a];
 						var disabled = option.disabled? 'disabled':'';
-						html += '<label class="'
-						 + control.control
-						 + '-inline">';
-
-						html += '<input type="checkbox" value="'
-						 + option.value
-						 + '" name="'
-						 + control.name
-						 + '" '
-						 + disabled
-						 + '>';
-
+						html += '<label class="'+ control.control+ '-inline">';
+						html += '<input type="checkbox" value="'+ option.value+ '" name="'+ control.name+ '" '+ disabled+ '>';
 						html += option.caption;
 						html += '</label>';
 					}
@@ -84,21 +68,9 @@ function BootstrapForm($)
 						control.options[a].checked = false;
 						var option = control.options[a];
 						var disabled = option.disabled? 'disabled':'';
-						html += '<div class="'
-						 + control.control
-						 + ' '
-						 + disabled
-						 + '">';
-
+						html += '<div class="'+ control.control+ ' '+ disabled+ '">';
 						html += ' <label>';
-						html += ' <input type="checkbox" value="'
-						 + option.value
-						 + '" name="'
-						 + control.name
-						 + '" '
-						 + disabled
-						 + '>';
-
+						html += ' <input type="checkbox" value="'+ option.value+ '" name="'+ control.name+ '" '+ disabled+ '>';
 						html +=   option.caption;
 						html +=   '</label>';
 						html += '</div>';
@@ -112,10 +84,7 @@ function BootstrapForm($)
 			{
 				html += '<div class="form-group">';
 				if (control.caption!=''){
-					html += '<label for="'
-					 + control.name
-					 + '" class="control-label">';
-
+					html += '<label for="'+ control.name+ '" class="control-label">';
 					html += control.caption;
 					html += '</label>';
 				}
@@ -127,17 +96,8 @@ function BootstrapForm($)
 						control.options[a].checked = false;
 						var option = control.options[a];
 						var disabled = option.disabled? 'disabled' :'';
-						html += '<label class="'
-						 + control.control
-						 + '-inline">';
-						html += '<input type="radio" value="'
-						 + option.value
-						 + '" name="'
-						 + control.name
-						 + '" '
-						 + disabled
-						 + '>';
-
+						html += '<label class="'+ control.control+ '-inline">';
+						html += '<input type="radio" value="'+ option.value+ '" name="'+ control.name+ '" '+ disabled+ '>';
 						html += option.caption;
 						html += '</label>';
 					}
@@ -151,22 +111,9 @@ function BootstrapForm($)
 						control.options[a].checked = false;
 						var option = control.options[a];
 						var disabled = option.disabled? 'disabled':'';
-						html += '<div class="'
-						 + control.control
-						 + ' '
-						 + disabled+'">';
-
+						html += '<div class="'+ control.control+ ' '+ disabled+'">';
 						html += ' <label>';
-						html += ' <input type="'
-						 + control.control
-						 + '" value="'
-						 + option.value
-						 + '" name="'
-						 + control.name
-						 + '" '
-						 + disabled
-						 + '>';
-
+						html += ' <input type="'+ control.control+ '" value="'+ option.value+ '" name="'+ control.name+ '" '+ disabled+ '>';
 						html +=   option.caption;
 						html += ' </label>';
 						html += '</div>';
@@ -180,25 +127,16 @@ function BootstrapForm($)
 				var multiple = control.multiple? 'multiple' :'';
 				html += '<div class="form-group">';
 				if (control.caption!=''){
-					html += '<label for="'
-					 + control.name
-					 + '" class="control-label">';
+					html += '<label for="'+ control.name+ '" class="control-label">';
 					html += control.caption;
 					html += '</label>';
 				}
-				html += '<'
-				 + control.control
-				 + ' '+multiple
-				 + ' class="form-control" id="'
-				 + control.name
-				 + '">';
+				html += '<'+ control.control+ ' '+multiple+ ' class="form-control" id="'+ control.name+ '">';
 
 				for (var a=0; a<control.options.length; a++)
 				{
-						var option = control.options[a];
-						html += '<option>'
-						 + option.caption
-						 + '</option>';
+					var option = control.options[a];
+					html += '<option>'+ option.caption+ '</option>';
 				}
 				html += '  </'+control.control+'>';
 				html += '</div>';
@@ -207,27 +145,15 @@ function BootstrapForm($)
 		html += '<div>';
 
 		var confirm = 'onclick="' + this.me() + '.setConfirmReturn();"';
-		html += '<button id="bt1" '
-		 + confirm
-		 + ' type="button" class="btn '
-		 + this.ConfirmStyle
-		 + '">';
+		html += '<button id="bt1" '+ confirm+ ' type="button" class="btn '+ this.ConfirmStyle+ '">';
 		html += this.ConfirmCaption;
 		html += '</button>';
 
-		var cancel = 'onclick="'
-		 + this.me()
-		 + '.setCancelReturn();"';
+		var cancel = 'onclick="'+ this.me()+ '.setCancelReturn();"';
 
-		html += '<button id="bt1" '
-		 + cancel
-		 + ' type="button" class="btn '
-		 + this.CancelStyle
-		 + '">';
-
+		html += '<button id="bt1" '+ cancel+ ' type="button" class="btn '+ this.CancelStyle+ '">';
 		html += this.CancelCaption;
 		html += '</button>';
-
 		html += '</div>';
 		html += '</form>';
 

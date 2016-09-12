@@ -1,60 +1,65 @@
 <?xml version="1.0"?>
 <ControlDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-	<Id>16b787e4-2bca-4e17-9edc-d39d7411a596</Id>
-	<Name>BootstrapAlert</Name>
-	<Description>Alert</Description>
-	<ObjClass>BootstrapAlert</ObjClass>
-	<Version>0.0.1</Version>
-	<RuntimeRender>BootstrapAlertRender.js</RuntimeRender>
-	<PropertiesDefinition>BootstrapAlertProperties.xml</PropertiesDefinition>
-	<DesignRender>BootstrapAlertRender.xsl</DesignRender>
-	<GxResources>BoostrapAlert.xpz</GxResources>
-	<ToolboxIcon>bootstrap.ico</ToolboxIcon>
-
-	<ShowMethod>show</ShowMethod>
-	<ResizeSupported>false</ResizeSupported>
-	<DataSourceAllowed>None</DataSourceAllowed>
-	<CustomDataSources />
-	<AutoGrowSupported>false</AutoGrowSupported>
-	<IncludeInControlInfo>false</IncludeInControlInfo>
-	<SupportFiles />
-	<iOS_SupportFiles />
-	<Android_SupportFiles />
-	<BB_SupportFiles />
-	<Platforms>
-		<Platform>Web</Platform>
-		<Platform>WebLayout</Platform>
-	</Platforms>
-	<ReferencedFiles />
-	<iOS_ReferencedFiles />
-	<Android_ReferencedFiles />
-	<BB_ReferencedFiles />
-	<Constructor>
-		<Parameters />
-		<Name>BootstrapAlert</Name>
-	</Constructor>
-	<ControlType></ControlType>
-
+  <Version>1.5.2</Version>
+  <DataSourceAllowed>None</DataSourceAllowed>
+  <CustomDataSources />
+  <AutoGrowSupported>false</AutoGrowSupported>
+  <IncludeInControlInfo>false</IncludeInControlInfo>
+  <SupportFiles />
+  <iOS_SupportFiles />
+  <Android_SupportFiles />
+  <BB_SupportFiles />
+  <RuntimeRender>BootstrapAlertRender.js</RuntimeRender>
+  <HeightPropertyName>Height</HeightPropertyName>
+  <WidthPropertyName>Width</WidthPropertyName>
+  <ResizeSupported>false</ResizeSupported>
+  <ObjClass>BootstrapAlert</ObjClass>
+  <Description>Alert</Description>
+  <Id>00000000-0000-0000-0000-000000000000</Id>
+  <Name>BootstrapAlert</Name>
+  <Platforms />
+  <ShowMethod>show</ShowMethod>
+  
+  
+ 
+  <iOS_ReferencedFiles />
+  <Android_ReferencedFiles />
+  <BB_ReferencedFiles />
+  <Constructor>
+    <Parameters />
+    <Name>Bootstrap</Name>
+  </Constructor>
+  <PropertiesDefinition>BootstrapAlertProperties.xml</PropertiesDefinition>
+  <ControlType />
+    <Events />
+	
+  <DesignRender>BootstrapAlertRender.xsl</DesignRender>
+  
+  <ToolboxIcon>bootstrap.ico</ToolboxIcon>
+  
+  <GxResources>BootstrapAlert.xpz</GxResources>
+  
+  <ReferencedFiles>
+    <File>BootstrapAlert.css</File>
+  </ReferencedFiles>
+  
 	<Categories>
-	   <Category>Bootstrap</Category>
+		<Category>Bootstrap</Category>
 	</Categories>
 
-	<Events>
-		<!-- <Event>EventName</Event> -->
-	</Events>
-
 	<Methods>
-		<Method>
-			<Name>ShowAlert</Name>
-			<Signature>ShowAlert(SDT: Message)</Signature>
-			<Parameters>
-				<Parameter>Message</Parameter>
-			</Parameters>
+	  	<Method>
+		<Name>ShowAlert</Name>
+		<Signature>ShowAlert(Title:Character, Message:Character)</Signature>
+		<Parameters>
+			<Parameter>Title</Parameter>
+			<Parameter>Message</Parameter>
+		</Parameters>
+		<ReturnType />
 		</Method>
 	</Methods>
 
 	<Actions>
-
 		<Action>
 			<Order>0</Order>
 			<ActionProperties>
@@ -95,6 +100,6 @@
 		</Action>
 
 	</Actions>
-	<IsPublic>true</IsPublic>
-	<Android_IsScrollable>false</Android_IsScrollable>
+  <IsPublic>true</IsPublic>
+  <Android_IsScrollable>false</Android_IsScrollable>
 </ControlDefinition>

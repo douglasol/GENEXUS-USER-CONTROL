@@ -1,3 +1,12 @@
+/*  BootstrapButtonBar
+
+	Apresenta uma barra de botoes
+
+    --------------------------------------------------------------
+	User Control: Desenvolvendo controles com GeneXus
+	15/08/2016, Douglas Hamilton de Oliveira
+
+*/
 function BootstrapButtonBar($)
 {
 	this.GetAttribute = function(){
@@ -9,8 +18,7 @@ function BootstrapButtonBar($)
 		this.Style = (this.Style=='') ? "btn-primary" : this.Style;
 		this.Size = (this.Size=='') ? "btn-sm" : this.Size;
 		var round = '';//(this.Round) ? "fa-circle":"";
-		//var squareborder = (this.SquareBorder) ? "fa-square-o":"";
-		
+		//var squareborder = (this.SquareBorder) ? "fa-square-o":"";		
 
 		switch (this.Size) {
 		case 'btn-xs':
@@ -101,9 +109,5 @@ function BootstrapButtonBar($)
 	this.Clicked = function(bt){
 		this.Attribute = bt;
 		this.Click();
-	}
-
-	this.destroy = function()
-	{
 	}
 }

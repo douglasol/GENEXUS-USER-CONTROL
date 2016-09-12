@@ -41,7 +41,9 @@
 		<Name>BootstrapButtonBar</Name>
 	</Constructor>
 	<ControlType></ControlType>
-	<Categories />
+	<Categories>
+	   <Category>Bootstrap</Category>
+	</Categories>
 	<Methods>
 		<!-- <Method>
 			<Name>MethodName</Name>
